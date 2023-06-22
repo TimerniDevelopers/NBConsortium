@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GenZ - LinkedIn Marketing</title>
+    <meta name="keywords" content="Morbizz" />
+    <meta name="description" content="Morbizz" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- FavIcon CSS -->
+    <link rel="icon" href="assets/images/favicon2.png" type="image/gif" sizes="16x16">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!--Google Fonts CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Icon CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <!--Font icomoon Icon CSS-->
+    <link href="https://fonts.cdnfonts.com/css/icomoon" rel="stylesheet">
+                
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+
+    <!-- Wow Animation CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.min.css">
+
+    <!-- Main Style CSS  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style>
+        
+/*===============================
+=            Choices            =
+===============================*/
+.choices {
+  position: relative;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.choices:focus {
+  outline: none;
+}
+
+.choices:last-child {
+  margin-bottom: 0;
+}
+
+.choices.is-disabled .choices__inner, .choices.is-disabled .choices__input {
+  background-color: #EAEAEA;
+  cursor: not-allowed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.choices.is-disabled .choices__item {
+  cursor: not-allowed;
+}
+
+.choices[data-type*="select-one"] {
+  cursor: pointer;
+}
+
+.choices[data-type*="select-one"] .choices__inner {
+  padding-bottom: 7.5px;
+}
+
+.choices[data-type*="select-one"] .choices__input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #DDDDDD;
+  background-color: #FFFFFF;
+  margin: 0;
+}
+
+.choices[data-type*="select-one"] .choices__button {
+  background-image: url("../../icons/cross-inverse.svg");
+  padding: 0;
+  background-size: 8px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -10px;
+  margin-right: 25px;
+  height: 20px;
+  width: 20px;
+  border-radius: 10em;
+  opacity: .5;
+}
+
+.choices[data-type*="select-one"] .choices__button:hover, .choices[data-type*="select-one"] .choices__button:focus {
+  opacity: 1;
+}
+
+.choices[data-type*="select-one"] .choices__button:focus {
+  box-shadow: 0px 0px 0px 2px #00BCD4;
+}
+
+.choices[data-type*="select-one"]:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-color: #333333 transparent transparent transparent;
+  border-width: 5px;
+  position: absolute;
+  right: 11.5px;
+  top: 50%;
+  margin-top: -2.5px;
+  pointer-events: none;
+}
+
+.choices[data-type*="select-one"].is-open:after {
+  border-color: transparent transparent #333333 transparent;
+  margin-top: -7.5px;
+}
+
+.choices[data-type*="select-one"][dir="rtl"]:after {
+  left: 11.5px;
+  right: auto;
+}
+
+.choices[data-type*="select-one"][dir="rtl"] .choices__button {
+  right: auto;
+  left: 0;
+  margin-left: 25px;
+  margin-right: 0;
+}
+
+.choices[data-type*="select-multiple"] .choices__inner, .choices[data-type*="text"] .choices__inner {
+  cursor: text;
+}
+
+.choices[data-type*="select-multiple"] .choices__button, .choices[data-type*="text"] .choices__button {
+  position: relative;
+  display: inline-block;
+  margin-top: 0;
+  margin-right: -4px;
+  margin-bottom: 0;
+  margin-left: 8px;
+  padding-left: 16px;
+  border-left: 1px solid #008fa1;
+  background-image: url("../../icons/cross.svg");
+  background-size: 8px;
+  width: 8px;
+  line-height: 1;
+  opacity: .75;
+}
+
+.choices[data-type*="select-multiple"] .choices__button:hover, .choices[data-type*="select-multiple"] .choices__button:focus, .choices[data-type*="text"] .choices__button:hover, .choices[data-type*="text"] .choices__button:focus {
+  opacity: 1;
+}
+
+.choices__inner {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 7.5px 7.5px 3.75px;
+  border: 1px solid #DDDDDD;
+  border-radius: 2.5px;
+  font-size: 14px;
+  min-height: 44px;
+  overflow: hidden;
+}
+
+.is-focused .choices__inner, .is-open .choices__inner {
+  border-color: #b7b7b7;
+}
+
+.is-open .choices__inner {
+  border-radius: 2.5px 2.5px 0 0;
+}
+
+.is-flipped.is-open .choices__inner {
+  border-radius: 0 0 2.5px 2.5px;
+}
+
+.choices__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.choices__list--single {
+  display: inline-block;
+  padding: 4px 16px 4px 4px;
+  width: 100%;
+}
+
+[dir="rtl"] .choices__list--single {
+  padding-right: 4px;
+  padding-left: 16px;
+}
+
+.choices__list--single .choices__item {
+  width: 100%;
+}
+
+.choices__list--multiple {
+  display: inline;
+}
+
+.choices__list--multiple .choices__item {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 3.75px;
+  margin-bottom: 3.75px;
+  background-color: #00BCD4;
+  border: 1px solid #00a5bb;
+  color: #FFFFFF;
+  word-break: break-all;
+}
+
+.choices__list--multiple .choices__item[data-deletable] {
+  padding-right: 5px;
+}
+
+[dir="rtl"] .choices__list--multiple .choices__item {
+  margin-right: 0;
+  margin-left: 3.75px;
+}
+
+.choices__list--multiple .choices__item.is-highlighted {
+  background-color: #00a5bb;
+  border: 1px solid #008fa1;
+}
+
+.is-disabled .choices__list--multiple .choices__item {
+  background-color: #aaaaaa;
+  border: 1px solid #919191;
+}
+
+.choices__list--dropdown {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  top: 100%;
+  margin-top: -1px;
+  border-bottom-left-radius: 2.5px;
+  border-bottom-right-radius: 2.5px;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.choices__list--dropdown.is-active {
+  display: block;
+}
+
+.is-open .choices__list--dropdown {
+  border-color: #b7b7b7;
+}
+
+.is-flipped .choices__list--dropdown {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: -1px;
+  border-radius: .25rem .25rem 0 0;
+}
+
+.choices__list--dropdown .choices__list {
+  position: relative;
+  max-height: 300px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  will-change: scroll-position;
+}
+
+.choices__list--dropdown .choices__item {
+  position: relative;
+  padding: 10px;
+  font-size: 14px;
+}
+
+[dir="rtl"] .choices__list--dropdown .choices__item {
+  text-align: right;
+}
+
+@media (min-width: 640px) {
+  .choices__list--dropdown .choices__item--selectable {
+    padding-right: 100px;
+  }
+  .choices__list--dropdown .choices__item--selectable:after {
+    content: attr(data-select-text);
+    font-size: 12px;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  [dir="rtl"] .choices__list--dropdown .choices__item--selectable {
+    text-align: right;
+    padding-left: 100px;
+    padding-right: 10px;
+  }
+  [dir="rtl"] .choices__list--dropdown .choices__item--selectable:after {
+    right: auto;
+    left: 10px;
+  }
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: #f2f2f2;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted:after {
+  opacity: .5;
+}
+
+.choices__item {
+  cursor: default;
+}
+
+.choices__item--selectable {
+  cursor: pointer;
+}
+
+.choices__item--disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  opacity: .5;
+}
+
+.choices__heading {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px;
+  border-bottom: 1px solid #f7f7f7;
+  color: gray;
+}
+
+.choices__button {
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.choices__button:focus {
+  outline: none;
+}
+
+.choices__input {
+  display: inline-block;
+  vertical-align: baseline;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  margin-bottom: 5px;
+  border: 0;
+  border-radius: 0;
+  max-width: 100%;
+  padding: 4px 0 4px 2px;
+}
+
+.choices__input:focus {
+  outline: 0;
+}
+
+[dir="rtl"] .choices__input {
+  padding-right: 2px;
+  padding-left: 0;
+}
+
+.choices__placeholder {
+  opacity: .5;
+}
+
+/*=====  End of Choices  ======*/
+
+
+
+.s131 form {
+  width: 100%;
+  max-width: 350px;
+}
+
+.s131 form .inner-form {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.s131 form .inner-form .input-field {
+  height: 68px;
+}
+
+.s131 form .inner-form .input-field input {
+  height: 100%;
+  background: #fff;
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 32px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #e5e5e5;
+}
+
+.s131 form .inner-form .input-field input.placeholder {
+  color: #9a9a9a;
+  font-size: 20px;
+}
+
+.s131 form .inner-form .input-field input:-moz-placeholder {
+  color: #9a9a9a;
+  font-size: 20px;
+}
+
+.s131 form .inner-form .input-field input::-webkit-input-placeholder {
+  color: #9a9a9a;
+  font-size: 20px;
+}
+
+.s131 form .inner-form .input-field input:hover, .s131 form .inner-form .input-field input:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.s131 form .inner-form .input-field.first-wrap {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.s131 form .inner-form .input-field.first-wrap input {
+  border-right: 0;
+}
+
+.s131 form .inner-form .input-field.second-wrap {
+  min-width: 260px;
+}
+
+.s131 form .inner-form .input-field.second-wrap .choices__inner {
+  background: #fff;
+  border-radius: 0;
+  border: 1px solid #e5e5e5;
+  height: 100%;
+  color: #333;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 30px;
+}
+
+.s131 form .inner-form .input-field.second-wrap .choices__inner .choices__list.choices__list--single {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+}
+
+.s131 form .inner-form .input-field.second-wrap .choices__inner .choices__item.choices__item--selectable.choices__placeholder {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  opacity: 1;
+  color: #333;
+  font-size: 20px;
+}
+
+.s131 form .inner-form .input-field.second-wrap .choices__inner .choices__list--single .choices__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  font-size: 20px;
+}
+
+.s131 form .inner-form .input-field.second-wrap .choices__list.choices__list--dropdown {
+  border: 0;
+  background: #fff;
+}
+
+.s131 form .inner-form .input-field.second-wrap .choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background: #fff;
+  color: #333;
+}
+
+.s131 form .inner-form .input-field.second-wrap .choices__list--dropdown .choices__item {
+  color: #333;
+}
+
+.s131 form .inner-form .input-field.second-wrap .choices__list--dropdown {
+  margin-top: 0;
+}
+
+.s131 form .inner-form .input-field.third-wrap {
+  width: 164px;
+}
+
+.s131 form .inner-form .input-field.third-wrap .btn-search {
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 20px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  background: #4272d7;
+  transition: all .2s ease-out, color .2s ease-out;
+  font-weight: 300;
+}
+
+.s131 form .inner-form .input-field.third-wrap .btn-search:hover {
+  background: #2d62d3;
+}
+
+.s131 form .inner-form .input-field.third-wrap .btn-search:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.s131 form .inner-form .choices[data-type*="select-one"] .choices__inner {
+  padding-bottom: 0;
+}
+
+.s131 form .inner-form .choices[data-type*="select-one"]:after {
+  border: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  transform: translateY(-50%);
+  opacity: 1;
+  right: 15px;
+  top: 50%;
+  background-size: 18px 18px;
+  background-position: right center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%23999' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3e%3cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+}
+
+.s131 form .inner-form .choices[data-type*="select-one"].is-open:after {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%23999' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3e%3cpath d='M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z'/%3e%3c/svg%3e");
+}
+
+@media screen and (max-width: 992px) {
+  .s131 form .inner-form .input-field {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .s131 form .inner-form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .s131 form .inner-form .input-field {
+    margin-bottom: 20px;
+  }
+  .s131 form .inner-form .input-field input {
+    padding: 10px 15px;
+  }
+  .s131 form .inner-form .input-field.first-wrap {
+    width: 100%;
+  }
+  .s131 form .inner-form .input-field.first-wrap .choices__inner {
+    padding: 10px 15px;
+  }
+  .s131 form .inner-form .input-field.second-wrap {
+    width: 100%;
+  }
+  .s131 form .inner-form .input-field.second-wrap input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .s131 form .inner-form .input-field.third-wrap {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Searchs_131.css.map */
+
+    </style>
+</head>
+<body>
+
+ <!-- Loder Start -->
+ <div class="loader-box-two">
+    <div class="dank-ass-loader">
+        <div class="load-shap">
+           <div class="arrow-two up outer outer-18"></div>
+           <div class="arrow-two down outer outer-17"></div>
+           <div class="arrow-two up outer outer-16"></div>
+           <div class="arrow-two down outer outer-15"></div>
+           <div class="arrow-two up outer outer-14"></div>
+        </div>
+        <div class="load-shap">
+           <div class="arrow-two up outer outer-1"></div>
+           <div class="arrow-two down outer outer-2"></div>
+           <div class="arrow-two up inner inner-6"></div>
+           <div class="arrow-two down inner inner-5"></div>
+           <div class="arrow-two up inner inner-4"></div>
+           <div class="arrow-two down outer outer-13"></div>
+           <div class="arrow-two up outer outer-12"></div>
+        </div>
+        <div class="load-shap">
+           <div class="arrow-two down outer outer-3"></div>
+           <div class="arrow-two up outer outer-4"></div>
+           <div class="arrow-two down inner inner-1"></div>
+           <div class="arrow-two up inner inner-2"></div>
+           <div class="arrow-two down inner inner-3"></div>
+           <div class="arrow-two up outer outer-11"></div>
+           <div class="arrow-two down outer outer-10"></div>
+        </div>
+        <div class="load-shap">
+           <div class="arrow-two down outer outer-5"></div>
+           <div class="arrow-two up outer outer-6"></div>
+           <div class="arrow-two down outer outer-7"></div>
+           <div class="arrow-two up outer outer-8"></div>
+           <div class="arrow-two down outer outer-9"></div>
+        </div>
+        <p class="loader__label-one">Loading...</p>
+     </div>
+</div>
+<!-- Loder End -->
+
+<!-- Header Start -->
+<header class="site-header-two">
+    <!--Navbar Start  -->
+    <div class="header-bottom-two">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-2">
+                    <!-- Sit Logo Start -->
+                    <div class="site-branding-two">
+                        <a href="index.html" title="Morbizz">
+                            <img src="assets/images/NBConsortium_logo.png" alt="Logo">
+                            <!-- <img src="assets/images/logo_white-two.png" alt="Logo"> -->
+                            <img src="assets/images/NBConsortium_logo.png" class="sticky-logo-two" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Sit Logo End -->
+                </div>
+                <div class="col-xl-10 col-lg-10">
+                    <div class="header-menu-two">
+                        <nav class="main-navigation-two">
+                            <button class="toggle-button-two">
+                                <span></span>
+                                <span class="toggle-width-two"></span>
+                                <span></span>
+                            </button>
+                           <ul class="menu">
+                            <li class="sub-items-two active">
+                                <a href="index.html" title="Home">Home</a>
+                             
+                                </li>
+                                <li class="sub-items-two">
+                                    <a href="about-us.html" title="About Us">About Us</a>
+                              
+                                    </li>
+                               <li class="sub-items-two">
+                                <a href="member.html" title="Services">Membership</a>
+                                </li>
+                               <li class="sub-items-two">
+                                <a href="services.html" title="Services">Services</a>
+                                </li>
+                                <li class="sub-items-two">
+                                    <a href="portfolio-landing.html" title="Pages">Events</a>
+
+                                </li>
+                                <li class="sub-items-two">
+                                    <a href="packages.html" title="Pages">ND resources</a>
+
+                                </li>
+                                <li class="sub-items-two">
+                                    <a href="blog.html" title="Blog">News</a>
+      
+                                </li>
+                                <li class="sub-items-two">
+                                    <a href="contact-us.html" title="Contact Us">Contact Us</a>
+          
+                                </li>
+                           </ul> 
+                        </nav>
+                        <div class="search-box-two">
+                            <div class="search-icon-two">
+                                <a href="javascript:void(0);" title="Search"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="search-input-two">
+                                <div class="search-input-box-two">
+                                    <form>
+                                        <input type="text" name="search" class="form-input-two" placeholder="Search Here..." required>
+                                        <button type="submit" class="sec-btn-two"><span><i class="fa fa-search" aria-hidden="true"></i></span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="black-shadow-two"></div>
+                        <!-- <div class="header-btn">
+                            <a href="Get-Started.html" class="sec-btn-two">Get Started</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Navbar End  -->
+ </header>
+<!-- Header End -->
+<!--Banner Start-->
+<section class="main-inner-banner-two">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrum-title-two">
+                    <h1 class="h1-title">Blog List</h1>
+                    <div class="breadcrum-two">
+                        <ul>
+                            <li>
+                                <a href="index-02.html">Home</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <a href="blog-list-02.html">Blog List</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Banner End-->
+
+<!--About Start-->
+        
+<section class="research-wrapper  position-relative">
+            
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-35">
+                <div class="news-list">
+                    <div class="row">
+                        <div class="col-lg-12 mb-35">
+                            <div class="news-post impor-post">
+                                <div class="news-carousel owl-carousel owl-theme">
+                                    <div class="img-top-container position-relative">
+                                        <img src="assets/images/1.jpg" alt="">
+                                        
+                                        <div>
+                                            <a href="https://www.youtube.com/watch?v=3BXrTQxUJTA" class="video-wrapper">
+                                                <div class="video-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.2661 10.4837C20.258 11.2512 20.258 12.7487 19.2661 13.5162C16.2685 15.8356 12.9213 17.6637 9.34979 18.9322L8.69731 19.1639C7.44904 19.6073 6.13053 18.7627 5.96154 17.4742C5.48938 13.8739 5.48938 10.126 5.96154 6.52574C6.13053 5.23719 7.44904 4.39263 8.69732 4.83597L9.34979 5.06771C12.9213 6.33619 16.2685 8.16434 19.2661 10.4837ZM18.3481 12.3298C18.5639 12.1628 18.5639 11.837 18.3481 11.6701C15.4763 9.44796 12.2695 7.69648 8.84777 6.4812L8.19529 6.24947C7.87034 6.13406 7.49691 6.35401 7.44881 6.72079C6.99363 10.1915 6.99363 13.8084 7.4488 17.2791C7.49691 17.6459 7.87034 17.8658 8.19529 17.7504L8.84777 17.5187C12.2695 16.3034 15.4763 14.5519 18.3481 12.3298Z" fill="black"></path>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="img-top-container position-relative">
+                                        <img src="assets/images/1.jpg" alt="">
+                                        
+                                    </div>
+                                    <div class="img-top-container position-relative">
+                                        <img src="assets/images/1.jpg" alt="">
+                                        
+                                    </div>
+                                </div>
+                               
+                                <div class="news-describe">
+                                    <h3>
+                                        <a href="news-details.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, nemo.</a>
+                                    </h3>
+                              
+                                    <ul class="post-meta">
+                                        <li><a href="#"><i class="icon fa fa-user"></i>by Admin</a></li>
+                                        <li><a href="#"><i class="icon fa fa-comment"></i>3 Comments </a></li>
+                                        <li><a href="#"><i class="icon fa fa-eye"></i>3 Views </a></li>
+                                        <li><a href="#"><i class="icon fa fa-share"></i>Share</a></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, repellat? Tenetur laboriosam doloribus, nostrum nesciunt asperiores numquam ea quas aliquam architecto facere magnam reprehenderit, rem voluptatum vel dolorum totam animi.</p>
+                                    <div class="site_button text-end">
+                                        <a class="cmn_btn cmn_outline" href="customQuote.html">
+                                            <span>Read more</span>
+                                             <i class="fa fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div> 
+                        
+                        <div class="comments-area">
+                             <div class="news-padding"> 
+                            
+                            <h4 class="news-side-title comment-widget">Comments</h4>
+                            
+                            </div>
+                            
+                    <div class="comment">
+                        <div class="author-image"><img src="assets/images/author-2-150x150.jpg" alt="Autohr Image"></div>
+                        <div class="comment-info">
+                            <h5><b class="light-color">William Smith</b></h5>
+                            <h6 class="date"><em>Monday, October 30, 2017</em></h6>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                dolore magnam aliquam quaerat voluptatem.</p>
+                        </div>
+                    </div><!-- comment -->
+
+                    <div class="comment">
+                        <div class="author-image"><img src="assets/images/author-3-150x150.jpg" alt="Autohr Image"></div>
+                        <div class="comment-info">
+                            <h5><b class="light-color">William Smith</b></h5>
+                            <h6 class="date"><em>Monday, October 30, 2017</em></h6>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                dolore magnam aliquam quaerat voluptatem.</p>
+                        </div>
+                    </div><!-- comment -->
+
+                </div><!-- comments-area -->
+
+                <div class="leave-comment-area">
+                    
+                    <div class="news-padding"> 
+                    
+                   
+                    <h4 class="news-side-title widget-title-border-2">Leave a comment</h4>
+                
+                    </div>
+                    
+                    <div class="leave-comment">
+
+                        <form method="post">
+                            <div class="row">						
+                
+                                <div class="col-sm-12">
+                                    <textarea class="message-input" rows="10" placeholder="Write your message"></textarea>
+                                </div>
+                                <div class="col-sm-12">
+                                    
+                                    <button class="btn btn-quote"> <b>Comment</b></button>
+                                     
+                                </div>
+
+                            </div><!-- row -->
+                        </form>
+
+                    </div><!-- leave-comment -->
+
+                </div><!-- comments-area -->
+
+                        
+                        </div>
+                       
+                        
+                        <div class="news-padding"> 
+                            
+                        <h4 class="news-side-title comment-widget"> More News</h4>
+                    
+                        </div>
+                        <div class="col-lg-6 mb-35">
+                            <div class="news-post impor-post">
+                                <div class="img-top-container position-relative">
+                                 
+                                    <img src="assets/images/1.jpg" alt="">
+                                    
+                                </div>
+                                <div class="news-describe">
+                                    <h3>
+                                        <a href="news-details.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, nemo.</a>
+                                    </h3>
+                              
+                                    <ul class="post-meta">
+                                        <li><a href="#"><i class="icon fa fa-user"></i>by Admin</a></li>
+                                        <li><a href="#"><i class="icon fa fa-comment"></i>3 Comments </a></li>
+                                        <li><a href="#"><i class="icon fa fa-eye"></i>3 Views </a></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, repellat? Tenetur laboriosam doloribus, nostrum nesciunt asperiores numquam ea quas aliquam architecto facere magnam reprehenderit, rem voluptatum vel dolorum totam animi.</p>
+                                    <div class="site_button text-end">
+                                        <a class="cmn_btn cmn_outline" href="customQuote.html">
+                                            <span>Read more</span>
+                                             <i class="fa fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="col-lg-6 mb-35">
+                            <div class="news-post impor-post">
+                                <div class="img-top-container position-relative">
+                                    <img src="assets/images/1.jpg" alt="">
+                                    
+                                </div>
+                                <div class="news-describe">
+                                    <h3>
+                                        <a href="news-details.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, nemo.</a>
+                                    </h3>
+                              
+                                    <ul class="post-meta">
+                                        <li><a href="#"><i class="icon fa fa-user"></i>by Admin</a></li>
+                                        <li><a href="#"><i class="icon fa fa-comment"></i>3 Comments </a></li>
+                                        <li><a href="#"><i class="icon fa fa-eye"></i>3 Views </a></li>
+                                    </ul>
+                                    
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, repellat? Tenetur laboriosam doloribus, nostrum nesciunt asperiores numquam ea quas aliquam architecto facere magnam reprehenderit, rem voluptatum vel dolorum totam animi.</p>
+                                    <div class="site_button text-end">
+                                        <a class="cmn_btn cmn_outline" href="customQuote.html">
+                                            <span>Read more</span>
+                                             <i class="fa fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        
+                        
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+              
+                <div class="mt-1">
+                    <nav>
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">«</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">»</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+                
+                <div class="news-padding"> 
+                            
+                        <h4 class="news-side-title comment-widget"> Resource Location</h4>
+                    
+                        </div>
+                
+                 <div class="map-w">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.0141225330276!2d90.37908411543151!3d23.74687579482697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9a590d68207%3A0x9dae6833fbceb8a3!2sTime%20research%20%26%20innovation%20Ltd.!5e0!3m2!1sen!2sbd!4v1676547772990!5m2!1sen!2sbd" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+                
+            </div>
+            
+            <div class="col-lg-4 mb-35">
+                <div class="news-side">
+               
+                <div class="news-side">
+                    <div class="mb-25  news-widget-com">
+                        <h4 class="news-side-title widget-title-border-2">Search</h4>
+                        <form action="#" class="mt-3">
+                            <div class="search-box position-relative d-flex">
+                                
+                                <input type="text" name="search" placeholder="Write keyword">
+                                <select name="" id="">
+                                    <option value="">Categories</option>
+                                </select>
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                            <div>
+                           
+                            </div>
+                        </form>
+                    </div>
+                    <div class="s131">
+                        <form>
+                          <div class="inner-form">
+                            <div class="input-field first-wrap">
+                              <input id="search" type="text" placeholder="What are you looking for?" />
+                            </div>
+                            <div class="input-field second-wrap">
+                              <div class="input-select">
+                                <select data-trigger="" name="choices-single-defaul">
+                                  <option placeholder="">CATEGORY</option>
+                                  <option>Subject A</option>
+                                  <option>Subject B</option>
+                                  <option>Subject C</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="input-field third-wrap">
+                              <button class="btn-search" type="button">SEARCH</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    
+                </div>
+               
+                    
+                    <div class="news-widget-com">
+
+                        <div class="top-categ-widget">
+                            <h4 class="news-side-title widget-title-border-2">Top Categories</h4>
+                            <ul>
+                                <li><a href="#">Apartments <span>(26)</span></a></li>
+                                <li><a href="#">Hotel <span>(30)</span></a></li>
+                                <li><a href="#">Office  <span>(71)</span></a></li>
+                                <li><a href="#">Luxary Vilas <span>(56)</span></a></li>
+                        
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="news-widget-com">
+
+                       <div class="latest-news-widget">
+                            <h4 class="news-side-title widget-title-border-2">Latest Resources</h4>
+                            <ul>
+                                <li>
+                                    <div class="popular-news-widget-item clearfix">
+                                        <div class="popular-news-widget-img">
+                                            <a href="#">
+                                                <img src="assets/images/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="popular-news-widget-brief">
+                                            <h6><a href="#">Lorem ipsum dolor sit
+                                                cing elit, sed do.</a></h6>
+                                            <div class="popular-news-meta">
+                                                <ul>
+                                                    <li class="popular-news-date">
+                                                        <a href="#"><i class="far fa-calendar-alt"></i>June 22, 2020</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="popular-news-widget-item clearfix">
+                                        <div class="popular-news-widget-img">
+                                            <a href="#">
+                                                <img src="assets/images/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="popular-news-widget-brief">
+                                            <h6><a href="#">Lorem ipsum dolor sit
+                                                cing elit, sed do.</a></h6>
+                                            <div class="popular-news-meta">
+                                                <ul>
+                                                    <li class="popular-news-date">
+                                                        <a href="#"><i class="far fa-calendar-alt"></i>June 22, 2020</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="popular-news-widget-item clearfix">
+                                        <div class="popular-news-widget-img">
+                                            <a href="#">
+                                                <img src="assets/images/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="popular-news-widget-brief">
+                                            <h6><a href="#">Lorem ipsum dolor sit
+                                                cing elit, sed do.</a></h6>
+                                            <div class="popular-news-meta">
+                                                <ul>
+                                                    <li class="popular-news-date">
+                                                        <a href="#"><i class="far fa-calendar-alt"></i>June 22, 2020</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>                                        
+                                                        
+                            </ul>
+                        </div>
+                
+                         <div class="latest-news-widget">
+                            <h4 class="news-side-title widget-title-border-2">Favourite Resources</h4>
+                            <ul>
+                                <li>
+                                    <div class="popular-news-widget-item clearfix">
+                                        <div class="popular-news-widget-img">
+                                            <a href="#">
+                                                <img src="assets/images/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="popular-news-widget-brief">
+                                            <h6><a href="#">Lorem ipsum dolor sit
+                                                cing elit, sed do.</a></h6>
+                                            <div class="popular-news-meta">
+                                                <ul>
+                                                    <li class="popular-news-date">
+                                                        <a href="#"><i class="far fa-calendar-alt"></i>June 22, 2020</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="popular-news-widget-item clearfix">
+                                        <div class="popular-news-widget-img">
+                                            <a href="#">
+                                                <img src="assets/images/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="popular-news-widget-brief">
+                                            <h6><a href="#">Lorem ipsum dolor sit
+                                                cing elit, sed do.</a></h6>
+                                            <div class="popular-news-meta">
+                                                <ul>
+                                                    <li class="popular-news-date">
+                                                        <a href="#"><i class="far fa-calendar-alt"></i>June 22, 2020</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="popular-news-widget-item clearfix">
+                                        <div class="popular-news-widget-img">
+                                            <a href="#">
+                                                <img src="assets/images/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="popular-news-widget-brief">
+                                            <h6><a href="#">Lorem ipsum dolor sit
+                                                cing elit, sed do.</a></h6>
+                                            <div class="popular-news-meta">
+                                                <ul>
+                                                    <li class="popular-news-date">
+                                                        <a href="#"><i class="far fa-calendar-alt"></i>June 22, 2020</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>                                        
+                                                        
+                            </ul>
+                        </div>
+                        
+                        <div class="latest-instra-widget">
+                            <h4 class="news-side-title widget-title-border-2">Instragram</h4>
+                           
+                    <ul class="instagram-img">
+                        <li class="instra"><a href="#"><img src="assets/images/instragram-side-1-150x150.jpg" alt="Instagram Image"></a></li>
+                        <li class="instra"><a href="#"><img src="assets/images/instragram-side-2-150x150.jpg" alt="Instagram Image"></a></li>
+                        <li class="instra"><a href="#"><img src="assets/images/instragram-side-3-150x150.jpg" alt="Instagram Image"></a></li>
+                        <div class="clearfix"></div>
+                        <li class="instra"><a href="#"><img src="assets/images/instragram-side-4-150x150.jpg" alt="Instagram Image"></a></li>
+                        <li class="instra"><a href="#"><img src="assets/images/instragram-side-5-150x150.jpg" alt="Instagram Image"></a></li>
+                        <li class="instra"><a href="#"><img src="assets/images/instragram-side-6-150x150.jpg" alt="Instagram Image"></a></li>
+                    </ul>
+                        
+                        </div>
+                
+                         <!-- sidebar-section tags-area -->
+                        
+              
+                
+                    </div>
+                </div>
+          
+            </div>
+        </div>
+    
+    </div>
+</section>
+
+<!--About End-->
+
+    
+<!--How it works Start-->
+<section class="main-about-us-three service_area">
+    
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="services-title-two">
+                    <div class="subtitle">
+                        <div class="subtitle-line-two"></div>
+                        <h2 class="h2-subtitle-two">Support us</h2>
+                    </div>
+                    <h2 class="h2-title">Our Most Popular
+                        Photo-Editing Services</h2>
+                </div>           
+                       
+             <div class="wow fadeInDown" data-wow-delay=".4s">
+                <div class="service-wrapper">
+                    <div class="service_card" style="width: 100%; display: inline-block;">
+                        <div class="service_img text-center">
+                            <img src="assets/images/service_one.png" alt="service_img">
+                        </div>
+                        <div class="service_content text-center">
+                            <h3 class="service_title">Image Masking</h3>
+                            <p class="light_color">There are many variations of passages</p>
+                            <p>Starting at <b> $1.19</b> per image</p>
+                        </div>
+                        <a class="radius_btn effectPlus" href="service-details.html" tabindex="0">
+                            <i class="fa fa-long-arrow-right "></i>
+                        </a>
+                    </div>
+                    <div class="service_card" style="width: 100%; display: inline-block;">
+                        <div class="service_img text-center">
+                            <img src="assets/images/service_one.png" alt="service_img">
+                        </div>
+                        <div class="service_content text-center">
+                            <h3 class="service_title">Image Masking</h3>
+                            <p class="light_color">There are many variations of passages</p>
+                            <p>Starting at <b> $1.19</b> per image</p>
+                        </div>
+                        <a class="radius_btn effectPlus" href="service-details.html" tabindex="0">
+                            <i class="fa fa-long-arrow-right "></i>
+                        </a>
+                    </div>
+                    <div class="service_card" style="width: 100%; display: inline-block;">
+                        <div class="service_img text-center">
+                            <img src="assets/images/service_one.png" alt="service_img">
+                        </div>
+                        <div class="service_content text-center">
+                            <h3 class="service_title">Image Masking</h3>
+                            <p class="light_color">There are many variations of passages</p>
+                            <p>Starting at <b> $1.19</b> per image</p>
+                        </div>
+                        <a class="radius_btn effectPlus" href="service-details.html" tabindex="0">
+                            <i class="fa fa-long-arrow-right "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>  
+            <div class="mt-3 text-center">
+               
+                <a class="cmn_btn cmn_outline" href="#">
+                   
+                    <span> Donation</span>
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                <a class="cmn_btn" href="#">
+                   
+                    <span> Become a member</span>
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                <a class="cmn_btn cmn_outline" href="#">
+                   
+                    <span>Sponsor</span>
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+            </div> 
+        </div>
+    </div>
+    </section>
+<!--How it worksEnd-->
+<!-- service two -->
+
+
+
+
+
+<!--Services Start-->
+<section class="main-service-two">
+    <div class="service-shape1-two">
+        <img src="assets/images/shape-3-two.png" alt="Shape">
+    </div>
+    <div class="service-shape2-two">
+        <img src="assets/images/shape-4-two.png" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="services-title-two">
+                    <div class="subtitle">
+                        <div class="subtitle-line-two"></div>
+                        <h2 class="h2-subtitle-two">Our Services</h2>
+                    </div>
+                    <h2 class="h2-title">How Our Expert Team Can Help</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service_two mb-90 pt-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service_two_card">
+                        <div class="service_two__image">
+                            <img src="assets/images/product_01.png" alt="">
+                        </div>
+                        <div class="service_two__content">
+                            <h4><a href="service-details.html">Image Masking</a></h4>
+                            <p>There are many variations of pass
+                                ages of image masking</p>
+                            <a href="service-details.html">More Details<i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service_two_card">
+                        <div class="service_two__image">
+                            <img src="assets/images/product_03.png" alt="">
+                        </div>
+                        <div class="service_two__content">
+                            <h4><a href="service-details.html">Image Masking</a></h4>
+                            <p>There are many variations of pass
+                                ages of image masking</p>
+                            <a href="service-details.html">More Details<i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="service.html" class="load_icon">
+                        <div class="arrow-right">
+                            <i class="fa fa-long-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Services End-->
+<!--Partners Logo Start-->
+<div class="main-partner-logo-two wow fadeInUp" data-wow-delay=".4s">
+    <div class="container">
+        <div class="text-center col-md-12 ">
+            <div class="section_wrapper text-center mb-5">
+                <div class="subheading">
+                    <h4 class="sub_title subtitle_two">Member Serives</h4>
+                </div>
+                <h2 class="title">some of our clients</h2>
+            </div>
+        </div>
+        <div class="row partners-slider">
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="assets/images/JackOfAll.png" class="partner-overlay" alt="brand" style="width: 60px; padding: 20px,">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="assets/images/brand2.png" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="assets/images/NBConsortium.png" class="partner-overlay" alt="brand" style="width: 150px; padding: 20px,">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="assets/images/brand3.png" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="assets/images/brand4.png" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="assets/images/Yumstreet.png" class="partner-overlay" alt="brand" style="width: 100px;">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="assets/images/Upgradingwomen.png" class="partner-overlay" alt="brand" style="width: 80px; padding: 20px,">
+                </div>
+            </div> 
+            
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="assets/images/Neurorebellion.png" class="partner-overlay" alt="brand" style="width: 150px; padding: 20px,">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="assets/images/brand5.png" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="assets/images/brand6.png" class="partner-overlay" alt="brand">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="partner-logo-box">
+                    <img src="assets/images/Frascatiassociates.png" class="partner-overlay" alt="brand" style="width: 120px; padding: 20px,">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Partners Logo End-->
+<div class="process_area mb-120 mobile-res-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_wrapper mb-5 text-center">
+                    <h4 class="sub_title wow animate__flipInXx animated" data-animation="fadeInUp" data-delay="1s" style="visibility: visible;">How it
+                        works</h4>
+                    <h2 class="title wow animate__bounceInn animated" data-animation="fadeInUp" data-delay="1.5s" style="visibility: visible;">How
+                        Cliper
+                        works</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-12 col-xl-8 text-center">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="process_card wow animate__fadeIn" data-animation="fadeInUp" data-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
+                            <div class="process_icon">
+                                <img class="process_one" src="assets/images/ss_one.png" alt="process_icon">
+
+                            </div>
+                            <div class="process_content">
+                                <h4>01.PLACE WORK ORDER</h4>
+                                <p>There are many variation and of passages</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="process_card wow animate__fadeIn" data-animation="fadeInUp" data-delay="1.5s" data-wow-duration="1.2s" style="visibility: visible; animation-duration: 1.2s; animation-name: fadeIn;">
+                            <div class="process_icon process_icon_2">
+                                <img class="process_two" src="assets/images/ss_two.png" alt="process_icon">
+                            </div>
+                            <div class="process_content">
+                                <h4>02.quick response</h4>
+                                <p>There are many variation and of passages</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="process_card wow animate__fadeIn" data-animation="fadeInUp" data-delay="2s" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeIn;">
+                            <div class="process_icon process_icon_3">
+                                <img class="process_three" src="assets/images/ss_three.png" alt="process_icon">
+                            </div>
+                            <div class="process_content">
+                                <h4>03.image files</h4>
+                                <p>There are many variation and of passages</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="process_card wow animate__fadeIn" data-animation="fadeInUp" data-delay="2.5s" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeIn;">
+                            <div class="process_icon process_icon_2">
+                                <img class="process_four" src="assets/images/ss_four.png" alt="process_icon">
+                            </div>
+                            <div class="process_content">
+                                <h4>04.download image</h4>
+                                <p>There are many variation and of passages</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="process_card wow animate__fadeIn" data-animation="fadeInUp" data-delay="3s" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeIn;">
+                            <div class="process_icon process_icon_5">
+                                <img class="process_five" src="assets/images/ss_five.png" alt="process_icon">
+                            </div>
+                            <div class="process_content">
+                                <h4>05.made payment</h4>
+                                <p>There are many variation and of passages</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="process_card mb-0 wow animate__fadeIn" data-animation="fadeInUp" data-delay="3.5s" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="process_icon process_icon_6">
+                                <img class="process_six" src="assets/images/ss_six.png" alt="process_icon">
+                            </div>
+                            <div class="process_content">
+                                <h4>06.give us review</h4>
+                                <p class="mb-0">There are many variation and of passages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-xl-block">
+                <div class="process_image">
+                    <div class="process_shape">
+                        <img class="process_shape_02" src="assets/images/shape_ss_02.png" alt="process_shape_02">
+                        <img class="process_shape_10" src="assets/images/rocketwithpeople.png" alt="process_shape_06">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Portfolio Start-->
+<div class="faq_area mb-120 mobile-res-mb">
+    <img class="faq_doted position-absolute" src="./assets/images/shapes/dottted.png" alt="">
+    <img class="faq_doted_two position-absolute" src="./assets/images/shapes/dottted.png" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_wrapper faq-section text-center mb-5">
+                    <h4 class="sub_title wow animate__fadeIn" data-animation="fadeInUp" data-delay="2s" data-wow-duration="3s" style="visibility: visible; animation-duration: 3s; animation-name: fadeIn;">Have any question</h4>
+                    <h2 class="title wow animate__fadeIn" data-animation="fadeInUp" data-delay="2.5s" data-wow-duration="3s" style="visibility: visible; animation-duration: 3s; animation-name: fadeIn;">Frequently Asked Questions</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-8 offset-lg-2">
+                <div class="faq-wrapper pt-40">
+                    <div class="accordion" id="accordionExample">
+                        
+                        <ul class="list">
+                            <li>
+                                <div class="accordion-item ">
+                                    <h2 class="accordion-header " id="heading1">
+                                        <button class="c-title accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseOne">
+                                            1. Can I share my innovative ideas?
+                                        </button>
+                                    </h2>
+
+                                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample" style="">
+                                        <div class="accordion-body">
+                                           <p>If you have an innovative idea, please share it with us! We provide guidelines for implementing it through our experts.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="main-portfolio-two">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="portfolio-title-two">
+                    <div class="subtitle">
+                        <div class="subtitle-line-two"></div>
+                        <h2 class="h2-subtitle-two">Our Portfolio</h2>
+                    </div>
+                    <h2 class="h2-title">How We Can Help</h2> 
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="portfolio-btn-two">
+                    <a href="portfolio-landing.html" class="sec-btn-two">View All Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid portfolio-side-two">
+        <div class="row portfolio-slider-two wow fadeInUp" data-wow-delay=".4s">
+            <div class="col-lg-4">
+                <div class="portfolio-box-two">
+                    <img src="assets/images/portfolio/BrandingLogo-Index.png" alt="Portfolio">
+                    <div class="portfolio-content-two">
+                        <a href="Portfolio_Branding.html"><h3 class="h3-title">Branding </h3></a>
+                        <p> Product, service, or concept development</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="portfolio-box-two">
+                    <img src="assets/images/portfolio/BrandingLogo-Index.png" alt="Portfolio">
+                    <div class="portfolio-content-two">
+                        <a href="Portfolio_Branding.html"><h3 class="h3-title">Graphic Design</h3></a>
+                        <p> Logo, social media & info graphic </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="portfolio-box-two">
+                    <img src="assets/images/portfolio/ContentCopywriting-Index.png" alt="Portfolio">
+                    <div class="portfolio-content-two">
+                        <a href="Portfolio_Copywriting.html"><h3 class="h3-title">Content & Copywriting</h3></a>
+                        <p>PR and Communication</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="portfolio-box-two">
+                    <img src="assets/images/portfolio/Newsletter-Index.png" alt="Portfolio">
+                    <div class="portfolio-content-two">
+                        <a href="Portfolio_Newsletter.html"><h3 class="h3-title">Newsletter</h3></a>
+                        <p>Newspaper Articles </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="portfolio-box-two">
+                    <img src="assets/images/portfolio/Training&Webinar-Index.png" alt="Portfolio">
+                    <div class="portfolio-content-two">
+                        <a href="Portfolio_TrainingWebinar.html"><h3 class="h3-title">Training & Webinar </h3></a>
+                        <p>In-person & online event</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-lg-4">
+                <div class="portfolio-box-two">
+                    <img src="assets/images/portfolio/VideoAdvertisement-Index.png" alt="Portfolio">
+                    <div class="portfolio-content-two">
+                        <a href="Portfolio_Advertisement.html"><h3 class="h3-title">Video Advertisement </h3></a>
+                        <p>Motion graphic</p>
+                    </div>
+                </div>
+            </div>
+               <div class="col-lg-4">
+                <div class="portfolio-box-two">
+                    <img src="assets/images/portfolio/Digital-Marketing-Index.png" alt="Portfolio">
+                    <div class="portfolio-content-two">
+                        <a href="Portfolio_DigitalMarketing.html"><h3 class="h3-title"> Digital Marketing </h3></a>
+                        <p>Google corporate profile</p>
+                    </div>
+                </div>
+            </div>
+                 <div class="col-lg-4">
+                <div class="portfolio-box-two">
+                    <img src="assets/images/portfolio/Social-Media-Management.png" alt="Portfolio">
+                    <div class="portfolio-content-two">
+                        <a href="Portfolio_Advertisement.html"><h3 class="h3-title">Social Media </h3></a>
+                        <p>Account Management & Cold Email</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Portfolio End-->
+
+
+
+
+    
+<!--    Booking schedule end-->
+<!--Blog Detail Start-->
+<section class="main-blog-detail-two">
+    <div class="blog-detail-shape1-two">
+        <img src="assets/images/shape-5-two.png" alt="Shape">
+    </div>
+    <div class="blog-detail-shape2-two">
+        <img src="assets/images/shape2-two.png" alt="Shape">
+    </div>
+    <div class="blog-detail-shape3-two">
+        <img src="assets/images/shape-3-two.png" alt="Shape">
+    </div>
+    <div class="blog-detail-shape4-two">
+        <img src="assets/images/shape-6-two.png" alt="Shape">
+    </div>
+    <div class="blog-detail-shape5-two">
+        <img src="assets/images/shape-4-two.png" alt="Shape">
+    </div>
+    <div class="blog-detail-shape6-two">
+        <img src="assets/images/shape-7-two.png" alt="Shape">
+    </div>
+    <div class="blog-detail-shape7-two">
+        <img src="assets/images/shape-3-two.png" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--Blog Detail Info Start-->
+            
+        <div class="col-xl-8 col-lg-7">
+                <div class="blog-detail-box-two">
+                    
+                    <!--Related Post-->
+                    <div class="blog-detail-related-post-two pt-0">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="blog-detail-related-post-title-two">
+                                    <div class="subtitle">
+                                        <div class="subtitle-line-two"></div>
+                                        <h2 class="h2-subtitle-two">Our News</h2>
+                                    </div>
+                                    <h2 class="h2-title">Related Post</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-12">
+                                <div class="blog-box-two wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="blog-img-two">
+                                        <img src="assets/images/blog-details-02.png" alt="Blog">
+                                        <div class="blog-tag-two">
+                                            <a href="javascript:void(0);">Event</a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-box-content-two">
+                                        <div class="blog-date-author-two">
+                                            <div class="blog-date-two">
+                                                <div class="blog-circle-two"></div>
+                                                <a href="javascript:void(0);">31 March 2023</a>
+                                            </div>
+                                            <div class="blog-author-two">
+                                                <div class="blog-circle-two"></div>
+                                                <a href="javascript:void(0);">By Dr Shah Siddiqui</a>
+                                            </div>
+                                        </div>
+                                        <a href="blog-details-02.html"><h3 class="h3-title">The Neurodivergent Business Consortium... </h3></a>
+                                        <a href="blog-details-02.html" class="btn-link-two">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12">
+                                <div class="blog-box-two wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="blog-img-two">
+                                        <img src="assets/images/blog-details-02.png" alt="Blog">
+                                        <div class="blog-tag-two">
+                                            <a href="javascript:void(0);">Event</a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-box-content-two">
+                                        <div class="blog-date-author-two">
+                                            <div class="blog-date-two">
+                                                <div class="blog-circle-two"></div>
+                                                <a href="javascript:void(0);">31 March 2023</a>
+                                            </div>
+                                            <div class="blog-author-two">
+                                                <div class="blog-circle-two"></div>
+                                                <a href="javascript:void(0);">By Dr Shah Siddiqui</a>
+                                            </div>
+                                        </div>
+                                        <a href="blog-details-02.html"><h3 class="h3-title">The Neurodivergent Business Consortium... </h3></a>
+                                        <a href="blog-details-02.html" class="btn-link-two">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12">
+                                <div class="blog-box-two wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="blog-img-two">
+                                        <img src="assets/images/blog-details-02.png" alt="Blog">
+                                        <div class="blog-tag-two">
+                                            <a href="javascript:void(0);">Event</a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-box-content-two">
+                                        <div class="blog-date-author-two">
+                                            <div class="blog-date-two">
+                                                <div class="blog-circle-two"></div>
+                                                <a href="javascript:void(0);">31 March 2023</a>
+                                            </div>
+                                            <div class="blog-author-two">
+                                                <div class="blog-circle-two"></div>
+                                                <a href="javascript:void(0);">By Dr Shah Siddiqui</a>
+                                            </div>
+                                        </div>
+                                        <a href="blog-details-02.html"><h3 class="h3-title">The Neurodivergent Business Consortium... </h3></a>
+                                        <a href="blog-details-02.html" class="btn-link-two">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12">
+                                <div class="blog-box-two wow fadeInDown" data-wow-delay=".5s">
+                                    <div class="blog-img-two">
+                                        <img src="assets/images/blog-details-03.png" alt="Blog">
+                                        <div class="blog-tag-two">
+                                            <a href="javascript:void(0);">Marketing</a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-box-content-two">
+                                        <div class="blog-date-author-two">
+                                            <div class="blog-date-two">
+                                                <div class="blog-circle-two"></div>
+                                                <a href="javascript:void(0);">7 March 2023</a>
+                                            </div>
+                                            <div class="blog-author-two">
+                                                <div class="blog-circle-two"></div>
+                                                <a href="javascript:void(0);">By Saikat Khan</a>
+                                            </div>
+                                        </div>
+                                        <a href="blog-details-03.html"><h3 class="h3-title">Is brand engagement necessary? </h3></a>
+                                        <a href="blog-details-03.html" class="btn-link-two">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                    <!--Comment Start-->
+                    <div class="blog-detail-comment-two">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="blog-detail-comment-title-two">
+                                    <div class="subtitle">
+                                        <div class="subtitle-line-two"></div>
+                                        <h2 class="h2-subtitle-two">read Comments</h2>
+                                    </div>
+                                    <h2 class="h2-title">Comments (02)</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="blog-detail-comment-box-two wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="blog-detail-comment-img-two">
+                                        <img src="assets/images/Avater-02.png" class="rounded-circle" alt="Comment">
+                                    </div>
+                                    <div class="blog-detail-comment-content-two">
+                                        <div class="blog-detail-comment-name-reply">
+                                            <div class="blog-detail-comment-name-two">
+                                                <h3 class="h3-title">David Parker</h3>
+                                                <span>7 March, 2023</span>
+                                            </div>
+                                            <a href="javascript:void(0);" class="sec-btn-two">Reply</a>
+                                        </div>
+                                        <p>Thank you for posting this great content. Will try to follow in future work. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="col-lg-12">
+                                <div class="blog-detail-comment-box-two wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="blog-detail-comment-img-two">
+                                        <img src="assets/images/Avater-03.png" class="rounded-circle" alt="Comment">
+                                    </div>
+                                    <div class="blog-detail-comment-content-two">
+                                        <div class="blog-detail-comment-name-reply">
+                                            <div class="blog-detail-comment-name-two">
+                                                <h3 class="h3-title">Harry Olson</h3>
+                                                <span>9 March, 2023</span>
+                                            </div>
+                                            <a href="javascript:void(0);" class="sec-btn-two">Reply</a>
+                                        </div>
+                                        <p>Thank you Mahzabin for posting and I appreciate your work. I will contact GenZ for our LinkedIn marketing. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Leave Comment Start-->
+                    <div class="blog-detail-leave-comment-two">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="blog-detail-leave-comment-title-two">
+                                    <div class="subtitle">
+                                        <div class="subtitle-line-two"></div>
+                                        <h2 class="h2-subtitle-two">Write Comments</h2>
+                                    </div>
+                                    <h2 class="h2-title">Leave A Comment</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 wow fadeInUp" data-wow-delay=".4s">
+                                <form class="leave-reply-form-two">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-6">
+                                            <div class="form-box-two">
+                                                <input type="text" class="form-input-two" name="firstname" placeholder="First Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-6">
+                                            <div class="form-box-two">
+                                                <input type="text" class="form-input-two" name="lastname" placeholder="Last Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-12">
+                                            <div class="form-box-two">
+                                                <input type="email" class="form-input-two" name="email" placeholder="Email Address" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-box-two">
+                                                <textarea class="form-input-two" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-box-two mb-0">
+                                                <button type="submit" class="sec-btn-two"><span>Post Now</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Side Bar Start-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="blog-search-form">
+                    <form>
+                        <div class="form-box">
+                            <input type="text" name="search" placeholder="Search..." required>
+                            <button type="submit" class="sec-btn-two"><span><i class="fa fa-search" aria-hidden="true"></i></span></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="blog-about-me-two d-none">
+                    <h3 class="h3-title">About Me</h3>
+                    <div class="blog-side-line"></div>
+                    <div class="blog-about-me-img-box">
+                        <div class="blog-about-me-img">
+                            <img src="assets/images/Blog-details-Profile-image-mahzabin.png" class="rounded-circle" alt="About Me">
+                        </div>
+                    </div>
+                    <p>Hello, I am Mahzabin Akter, I am working with GenZ marketing since last year and have gained vast experience in content and copywriting. Thank you for visiting this page and I will appreciate it if you leave a feedback and contact us for your requirement.</p>
+                    <div class="blog-about-me-social">
+                        <ul>
+                            <li><a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+               <div class="blog-categories-two">
+                    <h3 class="h3-title">Categories</h3>
+                    <div class="blog-side-line"></div>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);"><img src="assets/images/plus.png" alt="Icon"><span>Competitive Analysis</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><img src="assets/images/plus.png" alt="Icon"><span>Social Media Campaign</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><img src="assets/images/plus.png" alt="Icon"><span>Contents & Copywriting</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><img src="assets/images/plus.png" alt="Icon"><span>Social Media Management</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><img src="assets/images/plus.png" alt="Icon"><span>Video Advertisement and Animation</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><img src="assets/images/plus.png" alt="Icon"><span>Cold Email Marketing</span></a>
+                        </li> 
+                        <li>
+                            <a href="javascript:void(0);"><img src="assets/images/plus.png" alt="Icon"><span>Coaching & Training</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><img src="assets/images/plus.png" alt="Icon"><span>PR & Communications</span></a>
+                        </li>
+                    </ul>
+                </div>
+               <div class="blog-recent-post-two">
+                    <h3 class="h3-title">Recent Post</h3>
+                    <div class="blog-side-line"></div>
+                    <ul>
+                        <li>
+                            <div class="blog-recent-post-img-two">
+                                <img src="assets/images/blog-side-01.png" alt="Blog">
+                            </div>
+                            <div class="blog-recent-post-title-two">
+                                <a href="blog-details-01.html"><span>Factors that Affect Portfolio Allocation</span></a>
+                                <div class="blog-date-two">
+                                    <div class="blog-circle-two"></div>
+                                    <a href="javascript:void(0);">7 March 2023</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog-recent-post-img-two">
+                                <img src="assets/images/blog-side-02.png" alt="Blog">
+                            </div>
+                            <div class="blog-recent-post-title-two">
+                                <a href="blog-details-02.html"><span>The Neurodivergent Business Consortium...</span></a>
+                                <div class="blog-date-two">
+                                    <div class="blog-circle-two"></div>
+                                    <a href="javascript:void(0);">31 March 2023</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog-recent-post-img-two">
+                                <img src="assets/images/blog-side-03.png" alt="Blog">
+                            </div>
+                            <div class="blog-recent-post-title-two">
+                                <a href="blog-details-03.html"><span>Is Brand engagement necessary?</span></a>
+                                <div class="blog-date-two">
+                                    <div class="blog-circle-two"></div>
+                                    <a href="javascript:void(0);">02 February 2023</a>
+                                </div>
+                            </div>
+                        </li>
+                      
+                    </ul>
+                </div>                
+                <div class="blog-recent-post-two">
+                    <h3 class="h3-title">Popular Post</h3>
+                    <div class="blog-side-line"></div>
+                    <ul>
+                     <li>
+                            <div class="blog-recent-post-img-two">
+                                <img src="assets/images/blog-side-04.png" alt="Blog">
+                            </div>
+                            <div class="blog-recent-post-title-two">
+                                <a href="blog-details-04.html"><span>Improve your Social presence through... </span></a>
+                                <div class="blog-date-two">
+                                    <div class="blog-circle-two"></div>
+                                    <a href="javascript:void(0);">12 April 2023</a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="blog-recent-post-img-two">
+                                <img src="assets/images/blog-side-05.png" alt="Blog">
+                            </div>
+                            <div class="blog-recent-post-title-two">
+                                <a href="blog-details-05.html"><span> What is Social media marketing? </span></a>
+                                <div class="blog-date-two">
+                                    <div class="blog-circle-two"></div>
+                                    <a href="javascript:void(0);">7 April 2023</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog-recent-post-img-two">
+                                <img src="assets/images/blog-side-06.png" alt="Blog">
+                            </div>
+                            <div class="blog-recent-post-title-two">
+                                <a href="blog-details-06.html"><span>The necessity of web application development</span></a>
+                                <div class="blog-date-two">
+                                    <div class="blog-circle-two"></div>
+                                    <a href="javascript:void(0);">17 March 2023</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="portfolio-contact-box-two blog-side-two">
+                    <h3 class="h3-title">Contact With Us For Any Advice</h3>
+                    <div class="portfolio-contact-icon-two">
+                        <img src="assets/images/call_service-one.png" alt="Icon">
+                    </div>
+                    <p>Need help? Talk to an expert</p>
+                    <h3 class="h3-title">+44 (0) 755 482 3078</h3> 
+                 </div>
+          
+            </div>
+        </div>
+    </div>
+</section>
+<!--Blog Detail End-->
+<!--Get In Touch Start-->
+<section class="main-get-in-touch-two">
+  
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="get-in-touch-content-two wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="get-in-touch-title-two">
+                        <div class="subtitle">
+                            <div class="subtitle-line-two"></div>
+                            <h2 class="h2-subtitle-two">Get In Touch</h2>
+                        </div>
+                        <h2 class="h2-title">Do you need LinkedIn Account Analysis?</h2>
+                    </div>
+                    <div class="points-two">
+                        <ul>
+                            <li>
+                                <div class="point-circle"></div><p>Please contact us for a free LinkedIn account analysis and to know more about lead generation success.</p>
+                            </li>
+                            <li>
+                                <div class="point-circle"></div><p>Our expert LinkedIn team will find a best suitable tailored campaing and account services for you to get more business.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-10">
+                <div class="get-in-touch-form-two wow fadeInRight" data-wow-delay=".4s">
+                    
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-box-two">
+                                    <input type="text" name="FirstName" class="form-input-two" placeholder="Full Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-box-two">
+                                    <input type="email" name="EmailAddress" class="form-input-two" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-box-two">
+                                    <input type="text" name="PhoneNo" class="form-input-two" placeholder="Phone No." required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-box-two">
+                                    <input type="text" name="PhoneNo" class="form-input-two" placeholder="LinkedIn Profile Link" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-box-two">
+                                    <textarea class="form-input-two" placeholder="Message..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-box-two mb-0">
+                                    <button type="submit" class="sec-btn-two"><span>Submit Now</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+
+    </section>
+<!--Get In Touch End-->
+    
+
+
+
+<!--Footer Start-->
+<footer class="main-footer-two">
+    <div class="footer-overlay-shape-two">
+        <img src="assets/images/footer-overlay-two.png" alt="Overlay">
+    </div>
+    <div class="footer-shape1-two animate-this wow fadeInLeftBig" data-wow-delay=".8s">
+        <img src="assets/images/banner-shape1-two.png" alt="Shape">
+    </div>
+    <div class="footer-shape2-two animate-this wow fadeInUpBig" data-wow-delay=".9s">
+        <img src="assets/images/banner-shape2-two.png" alt="Shape">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-logo-two">
+                    <a href="index-02.html">
+                        <img src="assets/images/logo_white-two.png" alt="Morbizz">
+                    </a>
+                </div>
+                <div class="footer-contact-two">
+                    <ul>
+                        <li>
+                            <div class="footer-contact-icon-two">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                            <span>Halpern House, 1-2 Hampshire Terrace, Portsmouth, PO1 2QF</span>
+                        </li>
+                        <li>
+                            <div class="footer-contact-icon-two">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <span>+44 (0) 755 482 3078</span>
+                        </li>
+                        <li>
+                            <div class="footer-contact-icon-two">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <span>info@linkedinleadgeneration.xyz<br>services@linkedinleadgeneration.xyz</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-links-two">
+                    <h3 class="h3-title">Our Links</h3>
+                    <ul>
+                        <li>
+                            <a href="index-02.html"><div class="footer-link-hover-two"></div><span>Home</span></a>
+                        </li>
+                        <li>
+                            <a href="about-us.html"><div class="footer-link-hover-two"></div><span>About Us</span></a>
+                        </li>
+                        <li>
+                            <a href="faq.html"><div class="footer-link-hover-two"></div><span>FAQs</span></a>
+                        </li>
+                        <li>
+                            <a href="blog.html"><div class="footer-link-hover-two"></div><span>Blog</span></a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html"><div class="footer-link-hover-two"></div><span>Contact Us</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="footer-newsletter-two">
+                    <h3 class="h3-title">Subscribe to Newsletter !</h3>
+                    <p>We publish our newsletter with the most up to date information regularly. Please suscribe it to know our work, current affears and services.</p>
+                    <div class="footer-newsletter-form-two">
+                        <input type="email" name="email" class="form-input-two subscribe-input" placeholder="Email Address..." required>
+                        <button type="submit" class="sec-btn-two">Subscribe Now</button>
+                    </div>
+                    <div class="footer-social-media-two">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright-two">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-7">
+                    <div class="copyright-text-two">
+                        <span>Web Development & Copyright &copy; 2023 <a href="https://timerni.com/">Time research & innovation Ltd <img class="tri"; src="assets/images/Tri_logo.png" alt="" style="width: 30px; padding: 20px,"> </a> All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5">
+                    <div class="copyright-links-two">
+                        <ul>
+                            <li><a href="https://timerni.com/setting/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="https://timerni.com/setting/terms-condition">Team & Condition</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer End-->
+
+<!--Back To Top Start-->
+<div class="progress-wrap active-progress">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 273.171;"></path>
+    </svg>
+ </div>
+<!--Back To Top End-->
+
+<!-- Jquery JS Link -->
+<script src="assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap JS Link -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/choices.js"></script>
+
+<!-- Custom JS Link -->
+<script src="assets/js/custom.js"></script>
+
+<!-- Slick Slider JS Link -->
+<script src="assets/js/slick.min.js"></script>
+
+<!-- Slick Slider JS Link -->
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!-- Wow Animation JS -->
+<script src="assets/js/wow.min.js"></script>
+
+<!-- Bg Moving Js -->
+<script src="assets/js/bg-moving.js"></script>
+
+<!--Scroll Counter Js-->
+<script src="assets/js/custom-scroll-count.js"></script>
+
+<!--Back To Top JS-->
+<script src="assets/js/back-to-top.js"></script>
+<script>
+    const choices = new Choices('[data-trigger]',
+    {
+      searchEnabled: false
+    });
+
+  </script>
+</body>
+</html>
