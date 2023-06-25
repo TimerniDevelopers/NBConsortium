@@ -65,10 +65,10 @@
                                     <a href="about-us.html" title="About Us">About Us</a>
                               
                                     </li>
-                               <li class="sub-items-two ">
+                               <li class="sub-items-two d-none">
                                 <a href="member.html" title="Services">Membership</a>
                                 </li>
-                               <li class="sub-items-two ">
+                               <li class="sub-items-two d-none">
                                 <a href="services.html" title="Services">Services</a>
                                 </li>
                              <li class="sub-items-two">
@@ -344,83 +344,282 @@
         
         </div>
         <!--Side Bar Start-->
-        <div class="col-xl-4 col-lg-5">
+        <div class="col-xl-5 col-lg-5">
             <div class="service-list-box-two">
-                <ul>
-                    <li class="active">
-                        <a href="pillar1.html">
-                           <span>Diversity, Equality & Inclusion</span><i class="fa fa-chevron-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pillar2.html">
-                           <span>Business Incubation</span><i class="fa fa-chevron-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pillar3.html">
-                           <span>Mental Health & Well-being</span><i class="fa fa-chevron-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pillar4.html">
-                           <span>Training and Awareness</span><i class="fa fa-chevron-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pillar5.html">
-                           <span>Work-Based Learning and Job Placements</span><i class="fa fa-chevron-right"></i>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="pillar6.html">
-                           <span>Digital Sustainability and Business Growth </span><i class="fa fa-chevron-right"></i>
-                        </a>
-                    </li>                        
-                    <li>
-                        <a href="pillar7.html">
-                           <span>
-
-                            Legal advice, Advocacy and Representation
-                            </span><i class="fa fa-chevron-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="service-PRC.html">
-                           <span>PR &amp; Communications</span><i class="fa fa-chevron-right"></i>
-                        </a>
-                    </li>
-                </ul>
+                <nav>
+                    <div class="nav flex-column nav-tabs border-0" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-pillar1-tab" data-bs-toggle="tab" data-bs-target="#nav-pillar1" type="button" role="tab" aria-controls="nav-pillar1" aria-selected="true">
+                        <span>Diversity, Equality & Inclusion</span><i class="fa fa-chevron-right"></i>
+                      </button>
+                      <button class="nav-link" id="nav-pillar2-tab" data-bs-toggle="tab" data-bs-target="#nav-pillar2" type="button" role="tab" aria-controls="nav-pillar2" aria-selected="false">
+                        <span> Business Incubation</span><i class="fa fa-chevron-right"></i>
+                      </button>
+                      <button class="nav-link" id="nav-pillar3-tab" data-bs-toggle="tab" data-bs-target="#nav-pillar3" type="button" role="tab" aria-controls="nav-pillar3" aria-selected="false">
+                        <span>Mental Health & Well-being</span><i class="fa fa-chevron-right"></i>
+                      </button>
+                      <button class="nav-link" id="nav-pillar4-tab" data-bs-toggle="tab" data-bs-target="#nav-pillar4" type="button" role="tab" aria-controls="nav-pillar4" aria-selected="false">
+                        <span>Work-Based Learning and Job Placements</span><i class="fa fa-chevron-right"></i>
+                      </button>
+                      <button class="nav-link" id="nav-pillar5-tab" data-bs-toggle="tab" data-bs-target="#nav-pillar5" type="button" role="tab" aria-controls="nav-pillar5" aria-selected="false">
+                        <span>Training and Awareness</span><i class="fa fa-chevron-right"></i>
+                      </button>
+                      <button class="nav-link" id="nav-pillar6-tab" data-bs-toggle="tab" data-bs-target="#nav-pillar6" type="button" role="tab" aria-controls="nav-pillar6" aria-selected="false">
+                        <span>Digital Sustainability and Business Growth </span><i class="fa fa-chevron-right"></i>
+                      </button>
+                      <button class="nav-link" id="nav-pillar7-tab" data-bs-toggle="tab" data-bs-target="#nav-pillar7" type="button" role="tab" aria-controls="nav-pillar7" aria-selected="false">
+                        <span> Legal advice, Advocacy and Representation</span><i class="fa fa-chevron-right"></i>
+                      </button>
+                     
+        
+                    </div>
+                  </nav>
             </div>
         </div>
         <!--Service Detail Info Start-->
-        <div class="col-xl-8 col-lg-7">
-            <div class="blog-detail-box-two blog-box-two ">
-                <div class="blog-img-two wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                    <img src="assets/images/blog-details-02.png" alt="Blog">
-                    <div class="banner-play-btn">
-                        <a href="https://www.youtube.com/watch?v=yUwpx81trCo" class="banner-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+        <div class="col-xl-7 col-lg-7">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-pillar1" role="tabpanel" aria-labelledby="nav-pillar1-tab">
+                    <div class="blog-detail-box-two blog-box-two ">
+                        <div class="blog-img-two">
+                            <img src="assets/images/blog-details-02.png" alt="Blog">
+                            <div class="banner-play-btn">
+                                <a href="https://www.youtube.com/watch?v=yUwpx81trCo" class="banner-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                        <h2 class="h3-title blog-two pt-20">20+ Years Of Experience</h2>
+                        <p >Our businesses have 20+ Years Of Experience dealing with Diversity, Equality & Inclusion.</p>
+                        <div class="points-two">
+                            <ul>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title" >Diversity</p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title" >Equality	</p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">Inclusion	</p>
+                                </li>
+           
+                            </ul>
+                        </div>
+        
                     </div>
                 </div>
-                <h2 class="h3-title blog-two pt-20">20+ Years Of Experience</h2>
-                <p >Our businesses have 20+ Years Of Experience dealing with Diversity, Equality & Inclusion.</p>
-                <div class="points-two">
-                    <ul>
-                        <li>
-                            <div class="point-circle"></div><p class="h5-title" >Diversity</p>
-                        </li>
-                        <li>
-                            <div class="point-circle"></div><p class="h5-title" >Equality	</p>
-                        </li>
-                        <li>
-                            <div class="point-circle"></div><p class="h5-title">Inclusion	</p>
-                        </li>
-   
-                    </ul>
+                <div class="tab-pane fade" id="nav-pillar2" role="tabpanel" aria-labelledby="nav-pillar2-tab">
+                    <div class="blog-detail-box-two blog-box-two ">
+                        <div class="blog-img-two">
+                            <img src="assets/images/blog-details-02.png" alt="Blog">
+                            <div class="banner-play-btn">
+                                <a href="https://www.youtube.com/watch?v=yUwpx81trCo" class="banner-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                        <h2 class="h3-title blog-two pt-20">
+                            A team of professional businesses to excel
+                        </h2>
+                        <p>
+                            We are experts in Business Incubation and launching your product.
+                        </p>
+                        <div class="points-two">
+                            <ul>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">
+                                        Business Incubation
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title" >
+                                        Market Analysis
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">
+                                        Product Launch
+                                    </p>
+                                </li>
+           
+                            </ul>
+                        </div>
+        
+                    </div>
                 </div>
-
-            </div>
+                <div class="tab-pane fade" id="nav-pillar3" role="tabpanel" aria-labelledby="nav-pillar3-tab">
+                    <div class="blog-detail-box-two blog-box-two ">
+                        <div class="blog-img-two">
+                            <img src="assets/images/blog-details-02.png" alt="Blog">
+                            <div class="banner-play-btn">
+                                <a href="https://www.youtube.com/watch?v=yUwpx81trCo" class="banner-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                        <h2 class="h3-title blog-two pt-20">Tailor-made mental health & well-being support</h2>
+                        <p >We listen to our customers’ stories, feelings, and choices to understand the actual need to build a tailor-made solution..</p>
+                        <div class="points-two">
+                            <ul>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title" >Physical Health</p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title" >Mental	Health</p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">Well-being	</p>
+                                </li>
+           
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="nav-pillar4" role="tabpanel" aria-labelledby="nav-pillar4-tab">
+                    <div class="blog-detail-box-two blog-box-two ">
+                        <div class="blog-img-two">
+                            <img src="assets/images/blog-details-02.png" alt="Blog">
+                            <div class="banner-play-btn">
+                                <a href="https://www.youtube.com/watch?v=yUwpx81trCo" class="banner-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                        <h2 class="h3-title blog-two pt-20">
+                            Our award-winning training and awareness programme
+                        </h2>
+                        <p>
+                            We will understand your development needs and will tailor your learning to fulfil the job requirements. Additionally, we will aware the employer understands your ND speciality to build the best support for your growth.
+                        </p>
+                        <div class="points-two">
+                            <ul>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">
+                                        Trailored Training
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title" >
+                                        Job Support
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">
+                                        Business Awareness
+                                    </p>
+                                </li>
+           
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-pillar5" role="tabpanel" aria-labelledby="nav-pillar5-tab">
+                    <div class="blog-detail-box-two blog-box-two ">
+                        <div class="blog-img-two">
+                            <img src="assets/images/blog-details-02.png" alt="Blog">
+                            <div class="banner-play-btn">
+                                <a href="https://www.youtube.com/watch?v=yUwpx81trCo" class="banner-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                        <h2 class="h3-title blog-two pt-20">
+                            Learning targeted to your choice
+                        </h2>
+                        <p>
+                            We will help you to build your carrier on what you are good at and what you are passionate about through our WBL programme. We will find you a job placement with reasonable adjustments.
+                        </p>
+                        <div class="points-two">
+                            <ul>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">
+                                        WBL programme
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title" >
+                                        Credit Facilities
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">
+                                        Cash Advanced
+                                    </p>
+                                </li>
+           
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-pillar6" role="tabpanel" aria-labelledby="nav-pillar6-tab">
+                    <div class="blog-detail-box-two blog-box-two ">
+                        <div class="blog-img-two">
+                            <img src="assets/images/blog-details-02.png" alt="Blog">
+                            <div class="banner-play-btn">
+                                <a href="https://www.youtube.com/watch?v=yUwpx81trCo" class="banner-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                        <h2 class="h3-title blog-two pt-20">
+                            Digital growth for your future
+                        </h2>
+                        <p>
+                            We will work with your digital needs and will lay out the base of your development with your growth. Looking after the technological advancement while you need them most.
+                        </p>
+                        <div class="points-two">
+                            <ul>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">
+                                        Digital Sustainability
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title" >
+                                        Business Growth
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">
+                                        Future Proof
+                                    </p>
+                                </li>
+           
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-pillar7" role="tabpanel" aria-labelledby="nav-pillar7-tab">
+                    <div class="blog-detail-box-two blog-box-two ">
+                        <div class="blog-img-two">
+                            <img src="assets/images/blog-details-02.png" alt="Blog">
+                            <div class="banner-play-btn">
+                                <a href="https://www.youtube.com/watch?v=yUwpx81trCo" class="banner-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                        <h2 class="h3-title blog-two pt-20">
+                            Our dedication is to protecting your rights
+                        </h2>
+                        <p>
+                            We will engage with you to understand your necessities and administrate the dialogue with your defendants for each of your cases.
+                        </p>
+                        <div class="points-two">
+                            <ul>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">
+                                        Business Law
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title" >
+                                        Advocacy
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="point-circle"></div><p class="h5-title">
+                                        Representation
+                                    </p>
+                                </li>
+           
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+              </div>
+            
         </div>
     </div>
 </div>
@@ -576,15 +775,6 @@
  
 <!--Footer Start-->
 <footer class="main-footer-two">
-    <!-- <div class="footer-overlay-shape-two">
-        <img src="assets/images/footer-overlay-two.png" alt="Overlay">
-    </div>
-    <div class="footer-shape1-two animate-this wow fadeInLeftBig" data-wow-delay=".8s">
-        <img src="assets/images/banner-shape1-two.png" alt="Shape">
-    </div>
-    <div class="footer-shape2-two animate-this wow fadeInUpBig" data-wow-delay=".9s">
-        <img src="assets/images/banner-shape2-two.png" alt="Shape">
-    </div> -->
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6">

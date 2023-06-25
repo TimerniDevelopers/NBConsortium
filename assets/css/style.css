@@ -3211,9 +3211,7 @@ to {
     border-width: 2px 2px 2px 2px;
     border-radius: 100px 100px 100px 100px;
     border-color: #FFFFFF;
-    -webkit-transition: .5s -webkit-animation ripple 1s linear infinite;
     animation: ripple 1s linear infinite;
-    -webkit-transition: .5s;
     display: inline-block;
     margin-bottom: 20px;
     position: absolute;
@@ -6346,7 +6344,7 @@ a.radius_btn::before {
 }
 
 .main-footer-two {
-    padding-top: 248px;
+    padding-top: 80px;
     position: relative;
     background-color: #438FF9;
     overflow: hidden;
@@ -6554,10 +6552,13 @@ a.radius_btn::before {
     background: linear-gradient(90deg, rgba(255,115,104,1) 0%, rgba(255,176,108,1) 100%);
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
+.footer-logo-two{
+    max-width:180px
+}
 
 .footer-copyright-two {
     background-color: #9702b6;
-    margin-top: 120px;
+    margin-top: 50px;
     padding: 15px 0;
 }
 
@@ -7589,38 +7590,37 @@ a.radius_btn::before {
     padding-left: 0;
     margin-bottom: 0;
 }
-
+.service-list-box-two .nav-link,
 .service-list-box-two ul li {
     margin-bottom: 20px;
 }
-
 .service-list-box-two ul li:last-child {
     margin-bottom: 0;
 }
-
+.service-list-box-two .nav-link,
 .service-list-box-two ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 20px;
+    padding: 20px;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
     background-color: #fbf5f5;
     border-radius: 10px;
     position: relative;
     z-index: 0;
 }
-
+.service-list-box-two .nav-link,
 .service-list-box-two ul li a:hover {
   
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
-
+.service-list-box-two .nav-link.active,
 .service-list-box-two ul .active a {
  
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
-
+.service-list-box-two .nav-link::before,
 .service-list-box-two ul li a::before {
     content: "";
     position: absolute;
@@ -7635,45 +7635,52 @@ a.radius_btn::before {
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
+.service-list-box-two .nav-link:hover::before,
 .service-list-box-two ul li:hover a::before {
     opacity: 1;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
-
+.nav-tabs .nav-item.show .nav-link::before,
+.nav-tabs .nav-link.active::before,
+.service-list-box-two .nav-link.active:hover::before,
 .service-list-box-two ul .active a::before {
     opacity: 1;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
-
+.service-list-box-two .nav-link span{
+    text-align: start;
+}
+.service-list-box-two .nav-link span,
 .service-list-box-two ul li a span {
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
     color: #161616;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
-}
 
+}
+.service-list-box-two .nav-link:hover span,
 .service-list-box-two ul li a:hover span {
     color: #ffffff;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
-
+.service-list-box-two .nav-link.active span,
 .service-list-box-two ul .active a span {
     color: #ffffff;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
-
+.service-list-box-two .nav-link i,
 .service-list-box-two ul li a i {
     color: #ff7368;
-    font-size: 18px;
+    font-size: 17px;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
-
+.service-list-box-two .nav-link:hover i,
 .service-list-box-two ul li a:hover i {
     color: #ffffff;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
-
+.service-list-box-two .nav-link.active i,
 .service-list-box-two ul .active a i {
     color: #ffffff;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
@@ -7927,8 +7934,8 @@ a.radius_btn::before {
 
 /*==========Portfolio Detail Page CSS Start==========*/
 .main-portfolio-detail-one {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     position: relative;
 }
 
@@ -11182,9 +11189,7 @@ left: auto;
     border-width: 2px 2px 2px 2px;
     border-radius: 100px 100px 100px 100px;
     border-color: #FFFFFF;
-    -webkit-transition: .5s -webkit-animation ripple-red 1s linear infinite;
     animation: ripple-red 1s linear infinite;
-    -webkit-transition: .5s;
 }
 @keyframes ripple-red {
     0% {
@@ -13258,7 +13263,7 @@ left: auto;
     }
 
     .main-footer-two {
-        padding-top: 146px;
+        padding-top: 100px;
     }
 
     .footer-copyright-two {
