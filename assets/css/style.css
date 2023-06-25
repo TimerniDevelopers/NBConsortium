@@ -917,6 +917,24 @@ r
     line-height: 35px;
     font-weight: 700;
 }
+.h5-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #161616;
+    font-weight: 700;
+}
+.btn-square, .btn-sm-square, .btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    background: #9702b6;
+}
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
 .cmn_btn {
     background-color: #438FF9;
     padding: 12px 65px !important;
@@ -7584,7 +7602,7 @@ a.radius_btn::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 20px 20px;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
     background-color: #fbf5f5;
     border-radius: 10px;
@@ -7629,7 +7647,7 @@ a.radius_btn::before {
 
 .service-list-box-two ul li a span {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     color: #161616;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
@@ -14710,3 +14728,26 @@ left: auto;
 }
 /*==========Responsive CSS End==========*/
 
+.dedicated {
+    border: 1px solid #ddd;
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.dedicated .h-100 {
+    padding: 15px;
+}
+.text-primary-b{
+    color: #9702b6;
+}
+
+
+
+.subtitle{
+    display: inline-block;
+}
+.pillar-wrapper{
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
