@@ -1981,6 +1981,7 @@ r
     width: 100%;
     z-index: 100;
     transition: 0.3s;
+    background-color: #438FF9;
 }
 
 .header-top-one {
@@ -2059,6 +2060,9 @@ r
     padding: 20px 0;
     transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
     background-color:transparent;
+}
+.header-btn .sec-btn-two:before {
+    border-radius: 0px;
 }
 
 .site-branding-one a {
@@ -6484,6 +6488,7 @@ a.radius_btn::before {
     right: 0;
     top: 0;
     border-radius: 10px;
+    height: 60px;
 }
 .footer-newsletter-form-two .sec-btn-two:before {
     content: '';
@@ -10251,9 +10256,7 @@ section.main-my-work-in-two {
     box-shadow: none;
 }
 
-.btn-close {
-    background: #000000 !important;
-}
+
 
 .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
     color: #000000 !important;
@@ -10816,7 +10819,274 @@ section.main-my-work-in-two {
     -o-animation: rotateme 30s infinite alternate;
 }
 /*==========Contact Us Page CSS End==========*/
+/* dasboard  */
 
+.login-register-title h2 {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0 0 15px;
+}
+.login-register-title p {
+    font-weight: 400;
+    line-height: 1.6;
+    color: #999;
+    width: 85%;
+}
+.login-register-content .login-register-style form .login-register-input input {
+    color: #495057;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+    padding: 4px 15px 0;
+    font-size: 15px;
+}
+.login-register-content .login-register-style form .login-register-input {
+    position: relative;
+    margin-bottom: 10px;
+}
+.login-register-content .login-register-style form .login-register-input .forgot {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.login-register-content .login-register-style form .login-register-input .forgot a {
+    color:#ffb100;
+    font-size: 15px;
+}
+.signup-link a{
+
+    color: #4070f4 !important;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.bg{
+    background-color: #2f047a !important; 
+}
+.modal-btn-two {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    background-color: #2f047a !important; 
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 20px;
+    border: none;
+    position: relative;
+    z-index: 0;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+
+}
+
+.login-register-content .login-register-style form .btn-style-3 button:hover {
+    background-color: #ffb100;
+}
+.login-register-content .login-register-style form .btn-style-3 button {
+    font-size: 16px;
+    border-radius: 3px;
+    font-weight: 400;
+    color: #fff;
+  
+    background-color:#438FF9;
+    border: none;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    padding: 19px 10px 15px;
+    text-transform: uppercase;
+}
+.btn-check:focus+.btn, .btn:focus,
+*:focus{
+
+    box-shadow: none;
+}
+
+.myaccount-tab-menu.nav .nav-link {
+    background-color: transparent;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-radius: 0;
+    color: #000;
+    font-size: 15px;
+    display: block;
+    padding: 10px 15px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.myaccount-tab-menu.nav .nav-link:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+.myaccount-tab-menu.nav .nav-link:hover, 
+.myaccount-tab-menu.nav .nav-link.active {
+    background-color: #ffb100;
+    border-color: #e5e5e5;
+    color: #fff;
+}
+.myaccount-content {
+    border: 1px solid #eeeeee;
+    padding: 30px;
+}
+.myaccount-content h3 {
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+.myaccount-content .welcome strong {
+    font-weight: 400;
+    color: #ffb100;
+}
+.dashboard .flex-1{
+    flex:  1;
+}
+.dashboard .myaccount-tab-menu {
+    width: 200px;
+}
+.myaccount-content form {
+    margin-top: -20px;
+  }
+  .myaccount-content .check-btn:hover {
+    color:#ffb100;
+  }
+  .myaccount-content h3 {
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+  }
+  .myaccount-content .welcome a:hover {
+    color:#ffb100;
+  }
+  .myaccount-content .welcome strong {
+    font-weight: 400;
+    color: #ffb100;
+  }
+  .myaccount-content p {
+    line-height: 28px;
+    margin-bottom: 2px;
+  }
+  .myaccount-content fieldset {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .myaccount-content fieldset legend {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .myaccount-content .account-details-form {
+    margin-top: 40px;
+  }
+  .myaccount-content .account-details-form .single-input-item {
+    margin-bottom: 20px;
+  }
+  .myaccount-content .account-details-form .single-input-item label {
+    font-size: 14px;
+    text-transform: capitalize;
+    display: block;
+    margin: 0 0 5px;
+  }
+  .myaccount-content .account-details-form .single-input-item input {
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    padding: 2px 20px;
+    color: #000;
+    font-size: 13px;
+  }
+  .myaccount-content .account-details-form .single-input-item input:focus {
+    border: 1px solid#ffb100;
+  }
+  .myaccount-content .account-details-form .single-input-item button {
+    border: none;
+    background-color:#2f047a ;
+    font-weight: 600;
+    padding: 9px 25px;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+  .myaccount-content .account-details-form .single-input-item button:hover {
+    background-color: #656565;
+  }
+  
+  .myaccount-table {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  .myaccount-table table th,
+  .myaccount-table .table th {
+    padding: 10px;
+    font-weight: 600;
+    background-color: #f8f8f8;
+    border-color: #ccc;
+    border-bottom: 0;
+    color: #1f2226;
+  }
+  .myaccount-table table td,
+  .myaccount-table .table td {
+    padding: 10px;
+    vertical-align: middle;
+    border-color: #ccc;
+  }
+  .myaccount-table table td a,
+  .myaccount-table .table td a {
+    font-size: 14px;
+    color: #000;
+  }
+  .myaccount-table table td a i,
+  .myaccount-table .table td a i {
+    position: relative;
+    top: 2px;
+  }
+  .myaccount-table .table>:not(:first-child) {
+    border-top: 0px solid currentColor;
+}
+  .saved-message {
+    background-color: #fff;
+    border-top: 3px solid#ffb100;
+    font-size: 14px;
+    padding: 20px 0;
+    color: #333;
+  }
+  .dashboard{
+    padding-top: 150px;
+    padding-bottom: 70px;
+  }
+
+  .sec-btn-two {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    height: 50px;
+    background: #ffb100;
+    display: inline-block;
+    overflow: hidden;
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 0;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
 /*==========404 Error Page CSS Start==========*/
 .main-404-error-one {
     padding-top: 120px;
